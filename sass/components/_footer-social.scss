@@ -1,6 +1,5 @@
 .footer-social {
-    display: flex;
-    flex-direction: column;
+    @include flexDirection();
     margin-left: 70px;
 
     &__join {

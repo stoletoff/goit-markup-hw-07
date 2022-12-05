@@ -8,10 +8,8 @@
 
     &__box {
         position: absolute;
-        display: flex;
+        @include flexCenter();
         bottom: 0;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         height: 70px;
         background-color: rgba(47, 48, 58, 0.8);
@@ -24,7 +22,7 @@
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
-        color: #FFFFFF;
+        color: $colorWhite;
     
     }
 

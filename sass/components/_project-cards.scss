@@ -1,7 +1,6 @@
 .project-cards {
-    display: flex;
+    @include flexCenter($cross-axis:null);
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 34px;
 
     &__item {
@@ -26,7 +25,7 @@
 
     &__overlay{
         position: absolute;
-        display: inline-flex;
+        @include flexCenter($type:inline-flex);
         top: 0;
         left: 0;
         min-height: 294px;
@@ -34,8 +33,7 @@
         text-align: start;
     
     
-        align-items: center;
-        justify-content: center;
+
     
     
         background-color: rgba(33, 150, 243, 0.9);

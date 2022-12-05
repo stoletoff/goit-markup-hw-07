@@ -3,7 +3,7 @@
 
     &__item {
         flex-direction:column;
-        background-color: #FFFFFF;
+        background-color: $colorWhite;
         width: calc((100% - 90px) / 4);
         align-items: center;
         border-radius: 0px 0px 4px 4px;

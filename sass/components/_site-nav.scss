@@ -26,11 +26,7 @@
         color:var(--accent-color);
     }
     
-    &__link .current {
-        color:var(--accent-color);
-    }
-    
-    &__link .current::after {
+    &__link--current::after {
         position: absolute;
         content: "";
         bottom: -1px;
@@ -40,5 +36,13 @@
         border-radius: 2px;
         background-color:var(--accent-color);
     }
+
+    &__link--current {
+        color:var(--accent-color);
+    }
+    
 }
+
+
+
 

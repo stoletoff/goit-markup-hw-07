@@ -1,4 +1,6 @@
 @import './utils/variables';
+@import './utils/mixin';
+@import './utils/placeholders';
 @import './base/reset';
 @import './utils/hide';
 @import './base/container';
@@ -7,7 +9,6 @@
 @import './components/site-nav';
 @import './components/auth-nav';
 @import './components/hero';
-@import './components/overlay';
 @import './layouts/body';
 @import './components/button';
 @import './components/backdrop';

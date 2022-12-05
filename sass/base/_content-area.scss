@@ -1,4 +1,3 @@
 .content-area {
-    display: flex;
-    align-items: baseline;
+    @include flexCenter($cross-axis: baseline, $main-axis:null);
 }

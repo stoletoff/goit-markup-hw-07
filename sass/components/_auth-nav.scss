@@ -1,7 +1,7 @@
 .auth-nav {
-    display: flex;
+    @include flexCenter($main-axis:null);
+
     margin-left: auto;
-    align-items: center;
 
     &__item + &__item {
         padding-left: 50px;

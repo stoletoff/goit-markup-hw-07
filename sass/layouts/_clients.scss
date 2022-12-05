@@ -1,7 +1,5 @@
 .client-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter();
 
     &__item {
         width: calc((100% - 150px) / 6);
@@ -9,9 +7,7 @@
     }
 
     &__link {
-        display: flex;
-        align-items: center; 
-        justify-content: center;
+        @include flexCenter();
         color: var(--svg-color);
         border: 1px solid var(--svg-color); 
         border-radius: 4px;

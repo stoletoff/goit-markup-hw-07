@@ -1,13 +1,12 @@
 .footer-nav {
-    display: flex;
-    flex-direction: column;
+    @include flexDirection();
 
     &__item {
         line-height: calc(24 / 14);
     }
 
     &__address{
-        color: #FFFFFF;
+        color: $colorWhite;
     }
 
     &__link {

@@ -1,6 +1,5 @@
 .section {
-    padding-top:94px;
-    padding-bottom:94px
+   @extend %section;
 }  
 
 .section-title {
@@ -16,8 +15,18 @@
 
 .about {
     padding-top: 0px;
+
+    &--section {
+        padding-top:94px;
+        padding-bottom:94px
+    }
 }
 
 .about-team {
     background-color: #F5F4FA;
+
+    &--section {
+        padding-top:94px;
+        padding-bottom:94px
+    }
 }

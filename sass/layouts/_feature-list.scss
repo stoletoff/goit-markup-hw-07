@@ -8,11 +8,10 @@
     }
 
     &__link {
-        display: flex;
+        @include flexCenter( $cross-axis:null);
         background-color: #F5F4FA;
         height: 120px;
         align-items:center;
-        justify-content: center;
         margin-bottom: 30px;
     }
 

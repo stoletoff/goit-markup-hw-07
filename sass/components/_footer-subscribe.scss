@@ -1,6 +1,5 @@
 .footer-subscribe {
-    display: flex;
-    flex-direction: column;
+    @include flexDirection();
     margin-left: auto;
 
     &__form {
@@ -35,9 +34,9 @@
         text-align: center;
     
         background-color: var(--accent-color);
-        color:#FFFFFF;
+        color:$colorWhite;
     
-        font-family: 'Roboto', sans-serif;
+        font-family: $fontPrimary;
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
@@ -48,14 +47,13 @@
     }
 
     &__paraghraph {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter();
     }
 
     &__icon {
         margin-left: 10px;
         fill:#FFFFFF;
+        @include flexCenter($type:null);
         align-items: center;
         justify-content: center;
     }
@@ -63,7 +61,7 @@
 
     &__button:hover,
     &__button:focus {
-        background-color: #188CE8;
+        background-color: $colorFocus;
     }
 }
 
