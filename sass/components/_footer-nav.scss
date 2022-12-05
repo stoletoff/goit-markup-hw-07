@@ -1,0 +1,27 @@
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        line-height: calc(24 / 14);
+    }
+
+    &__address{
+        color: #FFFFFF;
+    }
+
+    &__link {
+        color:rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color:var(--accent-color);
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
